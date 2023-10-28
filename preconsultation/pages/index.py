@@ -17,18 +17,4 @@ import reflex as rx
 #         content = readme.read()
 #     return rx.markdown(content, component_map=styles.markdown_style)
 
-def index() -> rx.Component:
-    return rx.container(
-        rx.box(
-            "What is Reflex?",
-            # The user's question is on the right.
-            text_align="right",
-        ),
-        rx.box(
-            "A way to build web apps in pure Python!",
-            # The answer is on the left.
-            text_align="left",
-        ),
-    )
-
 
